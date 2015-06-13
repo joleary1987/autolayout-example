@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pb4-YH-PEe">
-                                <rect key="frame" x="36" y="40" width="548" height="540"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pb4-YH-PEe">
+                                <rect key="frame" x="36" y="40" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.66666666669999997" green="0.76078431369999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="FxH-2H-3ZV"/>
-                                    <constraint firstAttribute="width" secondItem="Pb4-YH-PEe" secondAttribute="height" multiplier="1:1" id="tMM-Fa-2xN"/>
-                                    <constraint firstAttribute="width" constant="100" id="vT5-Ug-cqz"/>
+                                    <constraint firstAttribute="width" constant="100" id="Ysp-2E-CSI"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,7 +33,6 @@
                         <constraints>
                             <constraint firstItem="Pb4-YH-PEe" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="aCl-OT-4FI"/>
                             <constraint firstItem="Pb4-YH-PEe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="eLl-ld-88p"/>
-                            <constraint firstItem="Pb4-YH-PEe" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="oRu-iy-9hJ"/>
                         </constraints>
                     </view>
                 </viewController>
