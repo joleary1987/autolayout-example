@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
-@interface ViewController ()
-
+@interface ViewController () <SecondViewControllerDelegate>
+- (IBAction)presentButtonTouched:(id)sender;
+@property (strong, nonatomic) SecondViewController *secondViewController;
 @end
 
 @implementation ViewController
@@ -24,4 +26,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)presentButtonTouched:(id)sender {
+    if (!self.secondViewController) self.secondViewController = [[SecondViewController alloc] init];
+    self.secondViewController.delegate = self;
+    [self presentViewController:self.secondViewController animated:YES completion:nil];
+}
+
+#pragma mark - SecondViewControllerDelegate
+- (void)dismissSecondViewController {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
